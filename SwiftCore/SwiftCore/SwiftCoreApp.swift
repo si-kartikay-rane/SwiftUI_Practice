@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftCoreApp: App {
     var body: some Scene {
         WindowGroup {
-            StateAndBindingWrapper()
+            EmpView(viewModel: EmpViewModel())
         }
     }
 }

@@ -12,7 +12,7 @@ import Alamofire
 class EmpViewModel: ObservableObject {
     @Published var fetchData: EmployeeData? = nil
 
-    func EmployeeAPICall() {
+    func EmployeeGETAPICall() {
         let url = "https://dummy.restapiexample.com/api/v1/employees"
         
         AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil)
@@ -35,5 +35,13 @@ class EmpViewModel: ObservableObject {
 
             }
         }
+    }
+    
+    func EmployeePOSTAPICall(){
+        let url = "https://dummy.restapiexample.com/api/v1/employees"
+        
+        let params = [
+            empl
+        ]
     }
 }

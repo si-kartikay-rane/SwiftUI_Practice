@@ -29,7 +29,7 @@ struct EmpView: View {
                     }
                 }
                 .onAppear {
-                    self.viewModel.EmployeeAPICall()
+                    self.viewModel.EmployeeGETAPICall()
                 }
                 .padding(30)
             }
